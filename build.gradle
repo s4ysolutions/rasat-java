@@ -73,8 +73,8 @@ bintray {
     dryRun = false
     publish = true
     override = true
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
+    user = System.getenv('BINTRAY_USER') ?: bintrayUser
+    key = System.getenv('BINTRAY_KEY') ?: bintrayKey
     publications = ['RasatPublication']
 
     pkg {
