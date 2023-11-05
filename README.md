@@ -5,6 +5,12 @@ A lightweight implementation of pub-sub/observer pattern for Java.
 The idea is borrowed from iOS [Rasat](https://github.com/gokselkoksal/Rasat) project and 
 replicates its concepts.
 
+## Usage
+
+Add the library to the list of dependencies
+
+[![Release](https://jitpack.io/v/s4ysolutions/rasat-java.svg)](https://jitpack.io/#s4ysolutions/rasat-java)
+
 ## Components
 
 ### Channel
@@ -20,7 +26,7 @@ ch.broadcast(2)
 
 ### Observable
 
-The channel has an observer property that passes the values to
+The channel has an observable property that passes the values to
 all handlers added to it
 
 ```

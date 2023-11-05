@@ -2,7 +2,6 @@ plugins {
     id 'java-library'
     id 'maven-publish'
     id 'signing'
-    id "com.jfrog.bintray" version "1.8.5"
 }
 
 ext {
@@ -26,11 +25,11 @@ javadoc {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
 repositories {
-    jcenter()
+    google()
     mavenCentral()
 }
 
@@ -68,7 +67,7 @@ publishing {
         }
     }
 }
-
+/*
 bintray {
     dryRun = false
     publish = true
@@ -97,3 +96,4 @@ bintray {
         }
     }
 }
+*/
